@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/textView_1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="标题1"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.hbh.cl.listviewhorizontalscrolldemo.util.InterceptScrollLinearLayout
+        android:id="@+id/scroollContainter"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/textView_1"
+        android:focusable="false" >
+
+        <com.hbh.cl.listviewhorizontalscrolldemo.util.CustomHScrollView
+            android:id="@+id/h_scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:focusable="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="标题2"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="标题3"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="标题4"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:gravity="center"
+                        android:text="标题5"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:gravity="center"
+                        android:text="标题6"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_7"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="标题7"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+        </com.hbh.cl.listviewhorizontalscrolldemo.util.CustomHScrollView>
+    </com.hbh.cl.listviewhorizontalscrolldemo.util.InterceptScrollLinearLayout>
+
+</RelativeLayout>

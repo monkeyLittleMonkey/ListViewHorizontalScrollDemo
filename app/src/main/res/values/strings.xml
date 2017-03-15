@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListViewHorizontalScrollDemo</string>
+    <string name="action_refresh">刷新</string>
+</resources>
